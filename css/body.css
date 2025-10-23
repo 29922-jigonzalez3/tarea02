@@ -1,0 +1,169 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+aside {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    gap: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #00703c;
+    color: white;
+}
+
+section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+section h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+section p {
+    margin-bottom: 0;
+}
+
+article {
+    background-color: white;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+#basic-data {
+    display: flex;
+}
+
+label {
+    font-weight: 500;
+    color: #444;
+    text-align: start;
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button,
+form input[type="button"] {
+    margin-top: 20px;
+}
+
+button,
+input[type="button"] {
+    background-color: #00703c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover,
+input[type="button"]:hover {
+    background-color: #014626;
+    transform: scale(1.02);
+}
+
+button:disabled,
+input[type="button"]:disabled {
+    opacity: 0.8;
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: none;
+}
+
+footer {
+    background-color: #00703c;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    color: white;
+    
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+/* Para pantallas MEDIUM */
+@media screen and (min-width: 740px) {
+    main {
+        padding: 10px 150px;
+    }
+}
+
+/* Para pantallas LARGE */
+@media screen and (min-width: 1200px) {
+    main {
+        flex-direction: row;
+        padding: 10px 200px;
+    }
+
+    aside {
+        width: 350px;
+    }
+    
+    article {
+        width: 400px;
+    }
+
+    .product {
+        width: 840px;
+    }
+
+    .basic-data {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+}

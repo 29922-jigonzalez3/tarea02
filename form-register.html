@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/body.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./image/logo_ESPE.png" alt="Logo ESPE">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./form-register.html">Formulario Registro</a></li>
+                <li><a href="./form-product.html">Formulario Producto</a></li>
+                <li><a href="#">Matriculas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Direccion de Envio</h2>
+            <form id="mailing-address">
+                <label for="street">Calle Principal</label>
+                <input type="text" id="street" name="calle" required>
+                <label for="cross-street">Tranversal</label>
+                <input type="text" id="cross-street" name="transversal" required>
+                <label>
+                    <input type="checkbox" id="owner" name="propietario"> Entregar al propietario
+                </label>
+                <label>
+                    <input type="checkbox" id="third-parties" name="terceros" checked> Entregar a un tercero
+                </label>
+                <label for="canton">Cantones:
+                    <select name="cantones" id="canton">
+                        <option value="quito">Quito</option>
+                        <option value="ambato">Ambato</option>
+                        <option value="guayaquil">Guayaquil</option>
+                        <option value="cuenca">Cuenca</option>
+                    </select>
+                </label>
+                <button id="send-data" disabled>Enviar Datos</button>
+            </form>
+        </article>
+
+        <article id="container-confidential-info">
+            <h2>Informacion Confidencial</h2>
+            <form id="confidential-info">
+                <label for="zip-code">Codigo Postal: </label>
+                <input type="text" id="zip-code" name="codigo-postal" required>
+                <label for="reference">Referencia de la Direccion</label>
+                <textarea id="reference" name="referencia" rows="4" required></textarea>
+                <button type="submit" id="save">Guardar</button>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <a href="./form-contact.html">Contacto Parte 3</a>
+    </footer>
+
+    <script src="./js/form.register.js"></script>
+</body>
+
+</html>

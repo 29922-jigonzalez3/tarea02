@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/body.css">
+
+  <style>
+    .access-button {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      gap: 10px;
+    }
+
+    .access-button button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="./index.html">
+        <img src="./image/logo_ESPE.png" alt="Logo ESPE">
+      </a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="./form-register.html">Formulario Registro</a></li>
+        <li><a href="./form-product.html">Formulario Producto</a></li>
+        <li><a href="#">Matriculas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <div class="access-button">
+        <button id="btnLogin" type="button">Iniciar Sesión</button>
+        <button id="btnRegister" type="button" style="background-color: gray;">Registrarse</button>
+      </div>
+
+      <form id="loginForm" name="FormLoginAvanzado">
+        <h2>Iniciar Sesión</h2>
+
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+
+      <form id="registerForm" style="display:none;">
+        <h2>Registrarse</h2>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="last-name">Apellido</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="newUsername">Usuario:</label>
+        <input type="text" id="newUsername" name="newUsername" required>
+
+        <label for="newEmail">Correo electrónico:</label>
+        <input type="email" id="newEmail" name="newEmail" required>
+
+        <label for="newPassword">Contraseña:</label>
+        <input type="password" id="newPassword" name="newPassword" required>
+
+        <button type="submit">Registrarse</button>
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <a href="./form-contact.html">Contacto Parte 3</a>
+  </footer>
+
+  <script src="./js/form.login.js">
+
+  </script>
+</body>
+
+</html>
